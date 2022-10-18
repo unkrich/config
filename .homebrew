@@ -1,0 +1,53 @@
+BREWINSTALLED=`which brew`
+
+###################################
+# HOMEBREW INSTALL                #
+###################################
+
+# if [[ ${BREWINSTALLED} == "" ]]; then
+  echo "Installing Brew"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+  source ~/.zshrc
+# fi
+brew tap homebrew/cask
+brew update
+
+source ~/.zshrc
+
+
+###################################
+# MACOS APPLICATIONS              #
+###################################
+
+brew install --cask google-chrome
+brew install --cask notion
+brew install --cask discord
+brew install --cask spotify
+brew install --cask cron
+brew install --cask superhuman
+brew install --cask linear-linear
+brew install --cask microsoft-office
+brew install --cask ledger-live
+brew install --cask qbittorrent
+brew install --cask vlc
+brew install --cask kicad
+brew install --cask openscad
+brew install --cask ultimaker-cura
+brew install --cask private-internet-access
+brew install --cask obs
+brew install --cask zappy
+brew install --cask muzzle
+brew install --cask arq
+brew install --cask dash
+brew install --cask pgadmin4
+brew install homebrew/cask-drivers/logitech-options
+brew install --cask hpedrorodrigues/tools/dockutil
+brew install --cask arduino
+
+
+# Mac App Store - must be logged into Apple account
+brew install mas
+mas install 967805235 # Paste App - Clipboard Manager
+mas install 409201541 # Pages App
+

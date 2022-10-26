@@ -23,6 +23,11 @@ EOF
 # Until this is addressed https://github.com/LnL7/nix-darwin/issues/149
 sudo mv /etc/nix/nix.conf /etc/nix/.nix-darwin.bkp.nix.conf
 
+# IDK why - some issue: https://github.com/LnL7/nix-darwin/issues/451
+printf 'run\tprivate/var/run\n' | sudo tee -a /etc/synthetic.conf
+/System/Library/Filesystems/apfs.fs/Contents/Resources/apfs.util -t
+
+
 # Build the configuration
 nix build .#darwinConfigurations.Kevins-MacBook-Pro.system
 ./result/sw/bin/darwin-rebuild switch --flake .

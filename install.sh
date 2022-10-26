@@ -45,4 +45,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # HOMEBREW                        #
 ###################################
 
-sh .homebrew
+zsh .homebrew

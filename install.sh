@@ -14,6 +14,8 @@ fi
 
 curl -L https://nixos.org/nix/install | sh
 
+source /etc/zshrc
+
 # Enable nix-command and flakes to bootstrap
 mkdir -p ~/.config/nix
 cat <<EOF > ~/.config/nix/nix.conf
@@ -38,7 +40,7 @@ nix build .#darwinConfigurations.Kevins-MacBook-Pro.system
 ###################################
 
 ln -s ${PWD}/.zshrc ~/.zshrc
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+zsh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 
 ###################################

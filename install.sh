@@ -42,9 +42,3 @@ nix build .#darwinConfigurations.Kevins-MacBook-Pro.system
 ln -s ${PWD}/.zshrc ~/.zshrc
 zsh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-
-###################################
-# HOMEBREW                        #
-###################################
-
-zsh .homebrew

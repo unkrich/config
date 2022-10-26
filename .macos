@@ -61,17 +61,17 @@ killall Finder
 ###################################
 
 # Change pinned apps
-dockutil --remove all
-dockutil --add /Applications/Google\ Chrome.app/
-dockutil --add /System/Applications/Messages.app/
-dockutil --add /Applications/Cron.app/
-dockutil --add /Applications/Superhuman.app/
-dockutil --add /Applications/zoom.us.app/
-dockutil --add /Applications/Slack.app/
-dockutil --add /Applications/Notion.app/
-dockutil --add /Applications/iTerm.app/
-dockutil --add /System/Applications/Notes.app/
-dockutil --add /System/Applications/System\ Preferences.app/
+# dockutil --remove all
+# dockutil --add /Applications/Google\ Chrome.app/
+# dockutil --add /System/Applications/Messages.app/
+# dockutil --add /Applications/Cron.app/
+# dockutil --add /Applications/Superhuman.app/
+# dockutil --add /Applications/zoom.us.app/
+# dockutil --add /Applications/Slack.app/
+# dockutil --add /Applications/Notion.app/
+# dockutil --add /Applications/iTerm.app/
+# dockutil --add /System/Applications/Notes.app/
+# dockutil --add /System/Applications/System\ Preferences.app/
 
 
 

@@ -109,7 +109,7 @@
   system.defaults.dock.autohide-delay = 0.0001;
 
   # Remove the animation when hiding/showing the Dock
-  system.defaults.dock.autohide-time-modifier = 0;
+  system.defaults.dock.autohide-time-modifier = 0.0001;
 
   # Dont rearrange spaces based on recent use
   system.defaults.dock.mru-spaces = false;
@@ -152,7 +152,7 @@
   homebrew.enable = true;
   homebrew.taps = [ "homebrew/cask" ];
   homebrew.brews = [
-    "homebrew/cask-drivers/logitech-options",
+    "homebrew/cask-drivers/logitech-options"
   ];
   homebrew.casks = [
     "google-chrome"
@@ -182,7 +182,7 @@
   homebrew.masApps = {
     "Paste" = 967805235;
     "Pages" = 409201541;
-  }
+  };
 
   # services.skhd.enable = true;
   # services.spacebar.enable = true;
